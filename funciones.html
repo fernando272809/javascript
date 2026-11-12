@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funciones JavaScript</title>
+</head>
+<body>
+
+    <h1>Ejemplos de funciones</h1>
+
+    <p id="resultado1"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+    <p id="resultado4"></p>
+    <p id="resultado5"></p>
+
+    <script>
+
+        // 1. Funcion declarada
+        function saludar() {
+            return "Hola mundo";
+        }
+        document.getElementById("resultado1").innerHTML =
+            saludar();
+
+
+        // 2. Funcion con parametros
+        function sumar(a, b) {
+            return a + b;
+        }
+        document.getElementById("resultado2").innerHTML =
+            "Suma: " + sumar(5, 3);
+
+
+        // 3. Funcion con retorno
+        function multiplicar(a, b) {
+            return a * b;
+        }
+        document.getElementById("resultado3").innerHTML =
+            "Multiplicacion: " + multiplicar(4, 2);
+
+
+        // 4. Funcion anonima
+        const saludo = function() {
+            return "Buenos dias";
+        };
+        document.getElementById("resultado4").innerHTML =
+            saludo();
+
+
+        // 5. Funcion flecha
+        const restar = (a, b) => {
+            return a - b;
+        };
+        document.getElementById("resultado5").innerHTML =
+            "Resta: " + restar(8, 3);
+
+    </script>
+
+       <br><br>
+    
+    <style>
+
+  .volver {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial;
+  }
+</style>
+
+<a class="volver" href="index.html">← Volver al Inicio</a>
+
+</body>
+</html>

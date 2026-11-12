@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<script>
+    const continuar=confirm("deceas registrar tus datos?");
+    if(continuar){
+        let nombre=prompt("escribe tu nombre");
+        let espe=prompt("escribe tu especialidad");
+        let edad=Number(prompt("escribe tu edad"));
+        document.write("tu nombre es:"+nombre+"<br>");
+        document.write("tu especialidad es:"+espe+"<br>"+ edad);
+
+
+    }
+    else{
+        alert ("tengo flojera");
+    }
+</script>
+    
+   <br><br>
+    
+    <style>
+
+  .volver {
+    display: inline-block;
+    background: #2c3e50;
+    color: white;
+    padding: 8px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial;
+  }
+</style>
+
+<a class="volver" href="index.html">← Volver al Inicio</a>
+
+</body>
+</html>
